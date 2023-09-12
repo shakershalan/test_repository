@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'button_xo.dart';
 
 class XoApp extends StatefulWidget{
@@ -79,16 +80,27 @@ class _XoAppState extends State<XoApp> {
                 ],
               ) ),
           Expanded(
-              child:Row(
-                crossAxisAlignment:  CrossAxisAlignment.stretch,
-
-                children: [
-                  ButtonXo(text:textList[6] ,onButtonClicked:onButtonClicked ,index: 6,),
-                  ButtonXo(text:textList[7] ,onButtonClicked:onButtonClicked ,index: 7,),
-                  ButtonXo(text:textList[8] ,onButtonClicked:onButtonClicked ,index: 8,),
-
-                ],
-              ) ),
+              child: Row(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              ButtonXo(
+                text: textList[6],
+                onButtonClicked: onButtonClicked,
+                index: 6,
+              ),
+              ButtonXo(
+                text: textList[7],
+                onButtonClicked: onButtonClicked,
+                index: 7,
+              ),
+              ButtonXo(
+                text: textList[8],
+                onButtonClicked: onButtonClicked,
+                index: 8,
+              ),
+            ],
+          )),
+          Text('shaker'),
         ],
       ),
     );
